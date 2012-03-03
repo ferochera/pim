@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="nanoc 3.2.2">
+    <title>Planetari de Castelló - <%= @item[:title] %></title>
+    <link href="<%= relative_path_to('/') %>img/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+  </head>
+  <body>
+      <%= yield %>
+ 		<div id="pie">
+	  		Planetari de Castelló - Passeig Maritim 1. 12100 Grau de Castelló - 
+	  		Tel. 964 282 584 - planetari@castello.es -  http://planetari.castello.es <br/>
+  	</div>
+  </body>
+</html>

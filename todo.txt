@@ -1,0 +1,37 @@
+POR HACER
+==========
+Imágenes:
+* rosa vientos
+* esfera armilar
+* péndulo foucault
+* espejos curvos
+* estatua big-bang
+
+
+
+IDEAS
+======
+
+*-. traducciones objetivo: es, ca, en, fr, it, de, ro (rumano) en este orden de prioridad.
+
+*-. Recordar objetivo de 800x600 en tamaño por lo que las imágenes deben ser menores que eso.
+
+*-. Markdown: para incluir imágenes con tag rel para shadowbox hay que poner el texto como html
+    lo siguiente pero sin margen a la izda.
+    <a href="/img/planet02_gr.jpg" rel="shadowbox" title="Hembra del Mar">
+      <img src="/img/planet02.jpg" alt="Hembra del Mar" />
+    </a>
+    Lo sgte NO funciona: [![Hembra del Mar](/img/planet02.jpg)](/img/planet02_gr.jpg){:rel=shadowbox}
+
+*-. Shadowbox no funciona con png
+
+
+
+HECHO
+======
+*-. relativize_paths aplicado en meta http-equiv tag
+*-. breadcrumbs: quitar raíz. -NO HA FUNDIONADO - luego si
+*-. función para que muestre lista de subitems
+*-. Mantener encabezado (¿y pie?) siempre visible para facilitar la navegación
+*-. Rules con markdown incorporado (filtro: markdown en encabezado)
+*-. incorporar shadowbox para ver imágenes (shadowbox: si para activarlo y evitar cargarlo si no toca)

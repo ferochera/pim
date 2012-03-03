@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="<%= language_code_of(@item)%>">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="600,url=<%= relative_path_to('/') %>">
+    <meta name="generator" content="nanoc 3.2.2">
+    <title>Planetari de Castelló - <%= @item[:title] %></title>
+    <link href="<%= relative_path_to('/') %>img/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <% if @item[:shadowbox] == 'si' %><link rel="stylesheet" type="text/css" href="<%= relative_path_to('/') %>shadowbox/shadowbox.css">
+    <script type="text/javascript" src="<%= relative_path_to('/') %>shadowbox/shadowbox_<%= language_code_of(@item) %>.js"></script>
+    <script type="text/javascript">
+      Shadowbox.init();
+    </script><% end %>
+  </head>
+  <body>
+    <div id="encabezado">
+      <div id="topbar">
+        <h2  class="oculto">Menu de navegación</h2>
+        <ul>
+          <li> 
+            <a href="<%= path_of_translated_id('/planetari/',language_code_of(@item)) %>">PLANETARI</a>
+          </li>
+          <li>
+            <a href="<%= path_of_translated_id('/ciencia/',language_code_of(@item)) %>">
+              <%= extract_main_traslated_id('CIENCIA',language_code_of(@item)) %>
+            </a>
+          </li>
+        </ul>
+        <div id="langbar">
+          <h2  class="oculto">Menu de idiomas</h2>
+          <ul>
+            <% translations_of(@item).each do |t| %>
+              <li>
+                <% if @item == t %>
+                  <span class="active" lang="<%= language_code_of(t) %>">
+                    [<%= language_of(t)%>]
+                  </span>
+                <% else %>
+                  <a href="<%= t.path %>" lang="<%= language_code_of(t)%>"> 
+                    [<%= language_of(t)%>]
+                  </a>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <div id="logobar">
+        <div id="logo-planet">
+          <img src="<%= relative_path_to('/')%>img/Planetari_varlogo50px.png" alt="Planetari de Castelló">
+	  	  </div>
+        <div id="logo-ayto">
+          <img src="<%= relative_path_to('/')%>img/Ajmtcultura_color50px.png" alt="Ajuntament de Castelló. Cultura">
+	  	  </div>
+      </div>
+      <div id="breadcrumbs">
+        <% unless @item.reps[0].path == "/" %>
+          <% breadcrumbs_trail_without_root.each do |b| %>
+          <%= link_to(  b[:title] , b.reps[0].path , :class => 'barra') if b %> 
+          <%= b != @item ? '»' : '' %> 
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <div id="main">
+      <div id="subitems">
+        <h2 class="oculto">Subitems</h2>
+        <ul>
+         <% subitems_below(@item).each do |t| %>
+          <li class="btnlnk">&nbsp;&nbsp;
+            <%= link_to(  t[:title] , t.reps[0].path , :class => 'resalta') if t %>
+          </li>
+         <% end %>
+        </ul>
+      </div>
+      <%= yield %>
+    </div>
+    <div id="pie">
+      Passeig Maritim 1. 12100 Grau de Castelló - 
+      Tel. 964 282 584 - planetari@castello.es -  http://planetari.castello.es <br/>
+      <a href="<%= path_of_translated_id('/info/',language_code_of(@item)) %>" class="barra">
+        <%= extract_main_traslated_id('Información y Terminos de Uso',language_code_of(@item)) %>
+      </a>
+    </div>
+  </body>
+</html>
