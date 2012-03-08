@@ -100,6 +100,7 @@ module PlaPIM::Helpers::Localization
       '/planetari/jardines/hembra-del-mar/' => '/planetari/jardines/hembra-del-mar/',
       '/planetari/jardines/rosa-de-vientos/'=> '/planetari/jardines/rosa-de-vientos/',
       '/planetari/planetario/'     => '/planetari/planetario/',
+      '/planetari/plano/'     => '/planetari/plano/',
       '/info/'        			=> '/info/'
     },
     'en' => {
@@ -158,6 +159,8 @@ module PlaPIM::Helpers::Localization
       '/planetari/jardines/hembra-del-mar/' => '/planetari/gardens/hembra-del-mar/',
       '/planetari/jardines/rosa-de-vientos/'=> '/planetari/gardens/windrose/',
       '/planetari/planetario/'     => '/planetari/planetarium/',
+      '/planetari/plano/'     => '/planetari/map/',
+
       '/info/'        			=> '/info/'
     },
     'ca' => {
@@ -216,6 +219,7 @@ module PlaPIM::Helpers::Localization
       '/planetari/jardines/hembra-del-mar/' => '/planetari/jardins/femella-de-la-mar/',
       '/planetari/jardines/rosa-de-vientos/'=> '/planetari/jardins/rosa-dels-vents/',
       '/planetari/planetario/'     => '/planetari/planetari/',
+      '/planetari/plano/'     => '/planetari/planol/',
       '/info/'        			=> '/info/'
     },
     'fr' => {
