@@ -1,12 +1,6 @@
 POR HACER
 ==========
-Imágenes:
-* rosa vientos
-* esfera armilar
-* péndulo foucault
-* espejos curvos
-* estatua big-bang
-
+* Finalizar tras instalar garantizando que los errores son entendibles (404,...). Esto depende del webserver.
 
 
 IDEAS
@@ -35,3 +29,9 @@ HECHO
 *-. Mantener encabezado (¿y pie?) siempre visible para facilitar la navegación
 *-. Rules con markdown incorporado (filtro: markdown en encabezado)
 *-. incorporar shadowbox para ver imágenes (shadowbox: si para activarlo y evitar cargarlo si no toca)
+Imágenes:
+* rosa vientos
+* esfera armilar
+* péndulo foucault
+* espejos curvos
+* estatua big-bang

@@ -161,9 +161,11 @@ h2.oculto { display:none; }
 #main h1 {
   font-size: 40px;
   font-weight: normal;
-  line-height: 40px;
+  line-height: 2em;
   letter-spacing: -1px;
 }
+
+#main h1,h2,h3,h4{ line-height:2em; }
 
 #contenido {
   display:inline;
@@ -221,8 +223,8 @@ a.resalta:hover img {
 }
 
 #main p {
-  line-height: 20px;
-  text-indent:50px;
+  line-height: 1.2em;
+  text-indent:20px;
   text-align:justify;
   text-justify:inter-word;
   padding:10px 0px;
