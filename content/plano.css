@@ -1,0 +1,63 @@
+/*css para el plano*/
+/* inspirado en http://ago.tanfa.co.uk/css/examples/europe-map.html*/
+
+#planetplano {
+ width: 600px;
+ height: 166px;
+ background: url(/img/planoh.png) no-repeat;
+ margin: 10px auto; padding: 0;
+ position: relative;
+ /*border: 2px solid #999;*/
+}
+
+#planetplano li {margin: 0; padding: 0; list-style: none; display: block; position: absolute;}
+
+#planetplano a {display: block; text-indent: -9999px; text-decoration: none;}
+
+#P2-Planetario {left:   0px; top:  56px; width: 48px; height:  53px;}
+#P1-Vestibulo  {left: 153px; top:  50px; width: 71px; height:  67px;}
+#P1-Sala4      {left: 111px; top:  83px; width: 61px; height:  53px;}
+#P1-SActos     {left: 204px; top:  83px; width: 61px; height:  53px;}
+#P1-Oficinas   {left: 171px; top:   2px; width: 34px; height:  54px;}
+#P0-Sala3      {left: 276px; top:  83px; width: 61px; height:  53px;}
+#P0-Sala2      {left: 369px; top:  83px; width: 61px; height:  53px;}
+#P0-Sala1      {left: 336px; top:   2px; width: 34px; height:  54px;}
+#P0-Lavabos    {left: 336px; top:  65px; width: 34px; height:  34px;}
+#J-HembraMar   {left: 454px; top: 108px; width:127px; height:  38px;}
+#J-RelojSol    {left: 433px; top:   0px; width: 72px; height: 109px;}
+#J-RosaVents   {left: 528px; top:   0px; width: 71px; height: 109px;}
+
+#P2-Planetario a {height: 53px;}
+#P1-Vestibulo a {height: 67px;}
+#P1-Sala4 a {height: 53px;}
+#P1-SActos a {height: 53px;}
+#P1-Oficinas a {height: 54px;}
+#P0-Sala3 a {height: 53px;}
+#P0-Sala2 a {height: 53px;}
+#P0-Sala1 a {height: 54px;}
+#P0-Lavabos a {height: 34px;}
+#J-HembraMar a {height: 59px;}
+#J-RelojSol a {height: 109px;}
+#J-RosaVents a {height: 109px;}
+
+#P2-Planetario a:hover {background: url(/img/planoh.png) 0px -221px no-repeat;}
+#P1-Vestibulo a:hover {background: url(/img/planoh.png) -153px -379px no-repeat;}
+#P1-Sala4 a:hover {background: url(/img/planoh.png) -111px -248px no-repeat;}
+#P1-SActos a:hover {background: url(/img/planoh.png) -204px -248px no-repeat;}
+#P1-Oficinas a:hover {background: url(/img/planoh.png) -171px -166px no-repeat;}
+#P0-Sala3 a:hover {background: url(/img/planoh.png) -276px -248px no-repeat;}
+#P0-Sala2 a:hover {background: url(/img/planoh.png) -369px -248px no-repeat;}
+#P0-Sala1 a:hover {background: url(/img/planoh.png) -336px -166px no-repeat;}
+#P0-Lavabos a:hover {background: url(/img/planoh.png) -336px -394px no-repeat;}
+#J-HembraMar a:hover {background: url(/img/planoh.png) -454px -190px no-repeat;}
+#J-RelojSol a:hover {background: url(/img/planoh.png) -433px -330px no-repeat;}
+#J-RosaVents a:hover {background: url(/img/planoh.png) -528px -330px no-repeat;}
+
+table {
+ width:90%;
+ max-width: 800px;
+ min-width: 600px;
+ display: table;
+ margin: 10px auto;
+}
+

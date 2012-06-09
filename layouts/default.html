@@ -12,6 +12,8 @@
     <script type="text/javascript">
       Shadowbox.init();
     </script><% end %>
+planocss: si
+    <% if @item[:planocss] == 'si' %><link rel="stylesheet" type="text/css" href="<%= relative_path_to('/') %>plano.css"><% end %>
   </head>
   <body>
     <div id="encabezado">

@@ -25,6 +25,10 @@ compile '/stylesheet/' do
   # don’t filter or layout ¿o si?
   filter :relativize_paths, :type => :css
 end
+compile '/plano/' do
+  # don’t filter or layout ¿o si?
+  filter :relativize_paths, :type => :css
+end
 
 compile '/' do
     filter :erb
@@ -70,6 +74,9 @@ end
 
 route '/stylesheet/' do
   '/style.css'
+end
+route '/plano/' do
+  '/plano.css'
 end
 
 route '*' do
